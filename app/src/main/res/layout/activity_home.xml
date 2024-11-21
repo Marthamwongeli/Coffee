@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/homeGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Morning"
+            android:textSize="24sp"
+            android:textColor="#4E2A14"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Banner Image -->
+        <ImageView
+            android:id="@+id/bannerImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/banner_image"
+            android:scaleType="centerCrop"
+            android:contentDescription="Banner"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Daily Specials Header -->
+        <TextView
+            android:id="@+id/dailySpecialsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daily Specials"
+            android:textSize="18sp"
+            android:textColor="#4E2A14"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Daily Specials Items -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <!-- Item 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/item1Image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/item1"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Item 1" />
+
+                <TextView
+                    android:id="@+id/item1Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iced Latte"
+                    android:textSize="14sp"
+                    android:textColor="#4E2A14"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Item 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/item2Image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/item2"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Item 2" />
+
+                <TextView
+                    android:id="@+id/item2Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frappuccino"
+                    android:textSize="14sp"
+                    android:textColor="#4E2A14"
+                    android:gravity="center" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Categories Header -->
+        <TextView
+            android:id="@+id/categoriesHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textSize="18sp"
+            android:textColor="#4E2A14"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Categories List -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <!-- Cold Coffee -->
+            <Button
+                android:id="@+id/categoryColdCoffee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cold Coffee"
+                android:backgroundTint="#7A5230"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_margin="4dp" />
+
+            <!-- Hot Coffee -->
+            <Button
+                android:id="@+id/categoryHotCoffee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hot Coffee"
+                android:backgroundTint="#7A5230"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_margin="4dp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/menuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Menu"
+            android:backgroundTint="#7A5230"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+
+</ScrollView>

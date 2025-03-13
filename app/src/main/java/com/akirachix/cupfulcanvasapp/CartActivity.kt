@@ -20,15 +20,15 @@ class CartActivity : AppCompatActivity() {
         val cartRecyclerView = findViewById<RecyclerView>(R.id.cartRecyclerView)
         val totalPriceText = findViewById<TextView>(R.id.totalPriceText)
 
-        // Sample data
+        
         cartList.add(CartItem(R.drawable.item1, "Caramel Latte", "Medium", 4.50))
         cartList.add(CartItem(R.drawable.item2, "Espresso", "Small", 2.50))
         cartList.add(CartItem(R.drawable.item3, "Cappuccino", "Large", 5.00))
 
-        // Update total price
+        
         updateTotalPrice(totalPriceText)
 
-        // Set up RecyclerView
+        
         cartRecyclerView.layoutManager = LinearLayoutManager(this)
         cartRecyclerView.adapter = CartAdapter(cartList) { cartItem ->
             cartList.remove(cartItem)
@@ -37,7 +37,7 @@ class CartActivity : AppCompatActivity() {
             cartRecyclerView.adapter?.notifyDataSetChanged()
         }
 
-        // Handle Checkout Button
+        
         findViewById<Button>(R.id.checkoutButton).setOnClickListener {
             val intent = Intent(this, CheckoutActivity::class.java)
             startActivity(intent)
